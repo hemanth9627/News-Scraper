@@ -1,12 +1,12 @@
 import pandas as pd
 
-# Step 1: Read the CSV file
-df = pd.read_csv('news_articles.csv')  # Adjust the filename as necessary
 
-# Display the columns to understand the structure
+df = pd.read_csv('news_articles.csv')  
+
+
 print("Columns in DataFrame:", df.columns.tolist())
 
-# Step 2: Define categories with keywords
+
 categories = {
     'Sports': ['football', 'basketball', 'cricket', 'tennis', 'hockey', 'sports', 'team','cup','bat'],
     'Politics': ['election', 'government', 'policy', 'vote', 'congress', 'senate', 'president','debate'],
@@ -16,23 +16,23 @@ categories = {
     'Business': ['market', 'business', 'economy', 'finance', 'investment', 'company', 'trade'],
     'World News': ['world', 'international', 'foreign', 'global'],
     'Science': ['science', 'research', 'study', 'discovery', 'environment'],
-    'Other': []  # Catch-all category
+    'Other': []  
 }
 
-# Step 3: Function to categorize articles based on title
+
 def categorize_article(title):
     title_lower = title.lower()
     for category, keywords in categories.items():
         if any(keyword in title_lower for keyword in keywords):
-            print(f"Title: '{title}' categorized as: {category}")  # Debug statement
+            print(f"Title: '{title}' categorized as: {category}") 
             return category
-    print(f"Title: '{title}' categorized as: Other")  # Debug statement
-    return 'Other'  # Default category
+    print(f"Title: '{title}' categorized as: Other")  
+    return 'Other'  
 
-# Apply categorization to the DataFrame
-df['Category'] = df['Title'].apply(categorize_article)  # Adjust 'Title' based on your column name
 
-# Step 4: Save the results to a new CSV file
+df['Category'] = df['Title'].apply(categorize_article)  
+
+
 output_filename = 'categorized_news_articles.csv'
 df.to_csv(output_filename, index=False)
 
