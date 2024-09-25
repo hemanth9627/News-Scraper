@@ -17,15 +17,15 @@ Before setting up the project, make sure you have the following installed:
 
 ## Installation
 
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/yourusername/news-aggregator-api.git
-cd news-aggregator-api
+To run this project locally, follow these steps:
 
-### Step 2: Install Dependencies
-```bash
-pip install -r requirements.txt
+1. Clone the repository to your local machine:
 
-### Step 3: Running the Application
-```bash
-python3 Rest_API.py
+   ```bash
+   git clone https://github.com/yourusername/car-price-predictor.git
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Start the application:
+   ```bash
+   python3 Rest_API.py
