@@ -21,3 +21,11 @@ Before setting up the project, make sure you have the following installed:
 ```bash
 git clone https://github.com/yourusername/news-aggregator-api.git
 cd news-aggregator-api
+
+### Step 2: Install Dependencies
+```bash
+pip install -r requirements.txt
+
+### Step 3: Running the Application
+```bash
+python3 Rest_API.py
