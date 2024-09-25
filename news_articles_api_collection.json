@@ -1,0 +1,133 @@
+{
+    "info": {
+        "name": "News Articles API",
+        "description": "Collection for the News Articles REST API built with Flask",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get All Articles",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/articles",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "articles"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Article by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/articles/0",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "articles",
+                        "0"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Search Articles by Keyword",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/search?keyword=Israel",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "search"
+                    ],
+                    "query": [
+                        {
+                            "key": "keyword",
+                            "value": "Israel"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Example Article 1",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/articles/0",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "articles",
+                        "0"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Example Article 2",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/articles/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "articles",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Example Article 3",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/articles/2",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "articles",
+                        "2"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
